@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import CartItem from './CartItem.js'
+import cartItemsList from './App.js'
+
 
 class CartItems extends Component {
   render() {
@@ -13,7 +16,7 @@ class CartItems extends Component {
               <div className="col-md-2">Quantity</div>
             </div>
           </div>
-          {/* Items go here */}
+          <CartItem />
         </div>
       </div>
     );

@@ -14,12 +14,10 @@ class App extends Component {
       { id: 3, product: { id: 42, name: 'Intelligent Paper Knife', priceInCents: 1999 }, quantity: 1 },
     ]
 
-
     return (
       <div>
         <CartHeader />
         <CartItems />
-        <CartItem  />
         <CartFooter copySymbol='&copy;' copyYear={"2018"}/>
       </div>
     );
