@@ -18,6 +18,7 @@ class App extends Component {
       <div>
         <CartHeader />
         <CartItems />
+        {cartItemsList.map(item => <CartItem item={item} /> )}
         <CartFooter copySymbol='&copy;' copyYear={"2018"}/>
       </div>
     );

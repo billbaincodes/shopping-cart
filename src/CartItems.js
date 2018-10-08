@@ -16,7 +16,6 @@ class CartItems extends Component {
               <div className="col-md-2">Quantity</div>
             </div>
           </div>
-          <CartItem />
         </div>
       </div>
     );
