@@ -4,7 +4,7 @@ class CartFooter extends Component {
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark">
-        <a className="navbar-brand" href="#">{this.props.copySymbol}{this.props.copyYear}</a>
+        <p className="navbar-brand">{this.props.copySymbol}{this.props.copyYear}</p>
       </nav>
     );
   }
