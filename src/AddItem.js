@@ -4,7 +4,7 @@ class AddItem extends Component {
 
   renderOptions = () => {
     return this.props.products.map((product) => {
-      return <option key={product.id} data-price={product.priceInCents}> {product.name} </option>
+      return <option key={product.id}> {product.name} </option>
     })
   }
   
