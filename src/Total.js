@@ -4,11 +4,10 @@ class Total extends Component {
 
   totalFinder = () => {
     let result = 0
-    for (var i = 0; i < this.props.cart.length; i++) {
-      result += this.props.cart[i].product.priceInCents * this.props.cart[i].quantity
-    }
-    result = '$' + (result/100).toFixed(2)
-    return result
+    this.props.cart.map(cartItem => {
+      return result += cartItem.product.priceInCents * cartItem.quantity
+    })
+    return result = `$${(result/100).toFixed(2)}`
   }
 
   render() {
