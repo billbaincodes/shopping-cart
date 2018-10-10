@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './App.css'
 import CartHeader from './CartHeader.js'
 import CartFooter from './CartFooter.js'
 import CartItems from './CartItems.js'
@@ -45,6 +44,7 @@ class App extends Component {
       </div>
     )
   }
+
 }
 
 export default App

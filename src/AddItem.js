@@ -45,7 +45,7 @@ class AddItem extends Component {
         <br />
         <button onClick={this.itemConstructor}>Submit</button>
       </div>
-    );
+    )
   }
 
 }

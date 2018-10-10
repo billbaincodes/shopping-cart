@@ -6,7 +6,7 @@ class CartFooter extends Component {
       <nav className="navbar navbar-dark bg-dark">
         <p className="navbar-brand">{this.props.copySymbol}{this.props.copyYear}</p>
       </nav>
-    );
+    )
   }
 }
 
