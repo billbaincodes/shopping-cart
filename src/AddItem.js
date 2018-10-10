@@ -15,6 +15,7 @@ class AddItem extends Component {
     else {
       let productAttributes = this.props.products.filter(product => product.name === this.refs.dropDown.value)
       let newItem = {
+        id: this.props.cart.length +1,
         product: {
           id: productAttributes[0].id,
           name: productAttributes[0].name,
@@ -22,6 +23,7 @@ class AddItem extends Component {
         },
         quantity: this.refs.quantity.value
       }
+      console.log(this.props)
       this.props.formSubmitted(newItem)
     }
   }
