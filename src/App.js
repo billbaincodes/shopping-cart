@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import CartHeader from './CartHeader.js'
 import CartFooter from './CartFooter.js'
-import CartItems from './CartItems.js';
+import CartItems from './CartItems.js'
 import AddItem from './AddItem.js'
 import Total from './Total.js'
 
@@ -43,8 +43,8 @@ class App extends Component {
         <AddItem cart={this.state.cartItemsList} products={this.state.products} formSubmitted={this.formSubmitted}/>
         <CartFooter copySymbol='&copy;' copyYear={" 2018"}/>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

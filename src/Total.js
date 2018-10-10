@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Total extends Component {
 
@@ -15,4 +15,4 @@ class Total extends Component {
   }
 }
 
-export default Total;
+export default Total

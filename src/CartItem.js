@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class CartItem extends Component {
   render() {
@@ -10,8 +10,8 @@ class CartItem extends Component {
           <div className="col-md-2">{this.props.item.quantity}</div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default CartItem;
+export default CartItem

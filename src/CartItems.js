@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import CartItem from './CartItem.js'
 
 class CartItems extends Component {
@@ -22,4 +22,4 @@ class CartItems extends Component {
   }
 }
 
-export default CartItems;
+export default CartItems

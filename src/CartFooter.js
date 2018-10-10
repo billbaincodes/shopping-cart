@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class CartFooter extends Component {
   render() {
@@ -10,4 +10,4 @@ class CartFooter extends Component {
   }
 }
 
-export default CartFooter;
+export default CartFooter
