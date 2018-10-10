@@ -23,7 +23,6 @@ class AddItem extends Component {
         },
         quantity: this.refs.quantity.value
       }
-      console.log(this.props)
       this.props.formSubmitted(newItem)
     }
   }
