@@ -10,7 +10,4 @@ class CartHeader extends Component {
   }
 }
 
-
-
-
 export default CartHeader;

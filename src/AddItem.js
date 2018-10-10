@@ -20,7 +20,7 @@ class AddItem extends Component {
           name: productAttributes[0].name,
           priceInCents: productAttributes[0].priceInCents,
         },
-      quantity: this.refs.quantity.value
+        quantity: this.refs.quantity.value
       }
       this.props.formSubmitted(newItem)
     }
@@ -29,18 +29,19 @@ class AddItem extends Component {
   render() {
     return (
       <div className="container">
-        <br></br>
+        <br />
         <form>
-          Quantity:<br></br>
+          Quantity:
+          <br />
           <input ref="quantity" type="text" name="quantity" placeholder="Enter a quantity..."></input>
-          <br></br>
+          <br />
           Products:
-          <br></br>
+          <br />
           <select ref="dropDown">
             {this.renderOptions()}
           </select>
         </form> 
-        <br></br>
+        <br />
         <button onClick={this.itemConstructor}>Submit</button>
       </div>
     );

@@ -4,9 +4,7 @@ class Total extends Component {
 
   totalFinder = () => {
     let result = 0
-    this.props.cart.map(cartItem => {
-      return result += cartItem.product.priceInCents * cartItem.quantity
-    })
+    this.props.cart.map(cartItem => {return result += cartItem.product.priceInCents * cartItem.quantity})
     return result = `$${(result/100).toFixed(2)}`
   }
 
@@ -16,8 +14,5 @@ class Total extends Component {
     );
   }
 }
-
-
-
 
 export default Total;

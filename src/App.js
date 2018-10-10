@@ -6,8 +6,6 @@ import CartItems from './CartItems.js';
 import AddItem from './AddItem.js'
 import Total from './Total.js'
 
-
-
 class App extends Component {
 
   constructor(props) {

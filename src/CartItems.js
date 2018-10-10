@@ -22,7 +22,4 @@ class CartItems extends Component {
   }
 }
 
-
-
-
 export default CartItems;

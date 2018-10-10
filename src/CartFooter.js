@@ -10,7 +10,4 @@ class CartFooter extends Component {
   }
 }
 
-
-
-
 export default CartFooter;
