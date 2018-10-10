@@ -7,18 +7,23 @@ class AddItem extends Component {
       return <option key={product.id}> {product.name} </option>
     })
   }
-  
+
   itemConstructor = () => {
-    let productAttributes = this.props.products.filter(product => product.name === this.refs.dropDown.value)
-    let newItem = {
-      product: {
-        id: productAttributes[0].id,
-        name: productAttributes[0].name,
-        priceInCents: productAttributes[0].priceInCents,
-      },
-    quantity: this.refs.quantity.value
+    if (this.refs.quantity.value <= 0) {
+      alert('Invalid Quantity')
     }
-    this.props.formSubmitted(newItem)
+    else {
+      let productAttributes = this.props.products.filter(product => product.name === this.refs.dropDown.value)
+      let newItem = {
+        product: {
+          id: productAttributes[0].id,
+          name: productAttributes[0].name,
+          priceInCents: productAttributes[0].priceInCents,
+        },
+      quantity: this.refs.quantity.value
+      }
+      this.props.formSubmitted(newItem)
+    }
   }
 
   render() {
@@ -27,7 +32,7 @@ class AddItem extends Component {
         <br></br>
         <form>
           Quantity:<br></br>
-          <input ref="quantity" type="text" name="quantity"></input>
+          <input ref="quantity" type="text" name="quantity" placeholder="Enter a quantity..."></input>
           <br></br>
           Products:
           <br></br>
@@ -40,6 +45,7 @@ class AddItem extends Component {
       </div>
     );
   }
+
 }
 
 export default AddItem;

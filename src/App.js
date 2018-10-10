@@ -43,7 +43,7 @@ class App extends Component {
         <CartItems items={this.state.cartItemsList}/>
         <Total cart={this.state.cartItemsList}/>
         <AddItem products={this.state.products} formSubmitted={this.formSubmitted}/>
-        <CartFooter copySymbol='&copy;' copyYear={"2018"}/>
+        <CartFooter copySymbol='&copy;' copyYear={" 2018"}/>
       </div>
     );
   }
