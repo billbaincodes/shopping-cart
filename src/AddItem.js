@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 class AddItem extends Component {
-
   renderOptions = () => {
     return this.props.products.map((product) => {
       return <option key={product.id}> {product.name} </option>
@@ -47,7 +46,6 @@ class AddItem extends Component {
       </div>
     )
   }
-
 }
 
 export default AddItem

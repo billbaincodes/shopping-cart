@@ -6,7 +6,6 @@ import AddItem from './AddItem.js'
 import Total from './Total.js'
 
 class App extends Component {
-
   constructor(props) {
     super(props)
     this.state = {
@@ -44,7 +43,6 @@ class App extends Component {
       </div>
     )
   }
-
 }
 
 export default App
