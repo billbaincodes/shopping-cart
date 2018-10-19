@@ -31,11 +31,11 @@ class AddItem extends Component {
       <div className="container">
         <br />
         <form>
-          Quantity:
+          Quantity :
           <br />
           <input ref="quantity" type="text" name="quantity" placeholder="Enter a quantity..."></input>
           <br />
-          Products:
+          Products :
           <br />
           <select ref="dropDown">
             {this.renderOptions()}
